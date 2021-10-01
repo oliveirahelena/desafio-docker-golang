@@ -19,16 +19,16 @@ Dica: No vídeo de introdução sobre o Docker quando falamos sobre o sistema de
 
 ### Criar a imagem:
 ```bash
-  docker build -t <usuário_docker_hub>/codeeducation:latest .
+  docker build -t helenaoliveira/codeeducation:latest .
 ```
   
 ### Subir o container:
 ```bash
-  docker run <usuário_docker_hub>/codeeducation
+  docker run helenaoliveira/codeeducation
 ```
   
 ### Publicar a imagem no Docker Hub:
 ```bash
   docker login
-  docker push <usuário_docker_hub>/codeeducation:latest
+  docker push helenaoliveira/codeeducation:latest
 ```
