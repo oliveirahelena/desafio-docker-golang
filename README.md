@@ -14,3 +14,21 @@ Lembrando que a Go Lang possui imagens oficiais prontas, vale a pena consultar o
 3) A imagem de nosso projeto Go precisa ter menos de 2MB 🙂
 
 Dica: No vídeo de introdução sobre o Docker quando falamos sobre o sistema de arquivos em camadas, apresento uma imagem "raiz", talvez seja uma boa utilizá-la.
+  
+## Comandos:
+
+### Criar a imagem:
+```bash
+  docker build -t <usuário_docker_hub>/codeeducation:latest .
+```
+  
+### Subir o container:
+```bash
+  docker run <usuário_docker_hub>/codeeducation
+```
+  
+### Publicar a imagem no Docker Hub:
+```bash
+  docker login
+  docker push <usuário_docker_hub>/codeeducation:latest
+```
